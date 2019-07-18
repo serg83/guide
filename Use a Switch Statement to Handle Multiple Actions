@@ -1,0 +1,17 @@
+Use a Switch Statement to Handle Multiple Actions
+Tip: Make sure you don’t use “break” commands after return statements within the switch cases.
+
+switch (action.type) {
+  case 'LOGIN':
+  return {
+    authenticated: true
+  }
+  case 'LOGOUT':
+  return {
+    authenticated: false
+  }
+  default: 
+  return state
+}
+  // change code above this line
+};
